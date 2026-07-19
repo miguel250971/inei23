@@ -1,0 +1,268 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+a{
+    /* background-color: rgb(79, 130, 241); */
+    text-decoration: none;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Inicio de cabecera */
+.cabecera{
+    background-color: rgb(79, 130, 241);
+    width: 67%;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.cabecera-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cabecera-img{
+    object-fit: cover;
+    height: 90%;
+    margin-right: 10px;
+}
+
+/* Fin de cabecera */ 
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Sección Bienvenidos */
+        .bienvenidos {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 50px 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .bienvenidos h1 {
+            color: #6b7cb5;
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+
+        .bienvenidos hr {
+            border: none;
+            border-top: 2px solid #e8e8f0;
+            margin-bottom: 30px;
+        }
+
+        .bienvenidos p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Sección Contenido */
+        .contenido {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 50px 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .contenido h2 {
+            text-align: center;
+            color: #c45a8a;
+            font-size: 2.5em;
+            font-weight: 400;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .seccion {
+            margin-bottom: 30px;
+        }
+
+        .seccion a{
+            margin-bottom: 30px;
+        }
+
+        .seccion h3 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .seccion h3.general {
+            color: #3d4a8a;
+        }
+
+        .seccion h3.aula {
+            color: #d32f2f;
+        }
+
+        .seccion h3.toe {
+            color: #2e7d32;
+        }
+
+        .seccion ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .seccion ul li {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+/*   INICIO DE ALGUNAS PRUEBAS 19 julio      */
+  .seccion ul li ul li a{
+            font-size: 0.9em;
+            /* color: #1cca50; */
+            word: spacing -5px;%;
+        }
+
+
+
+
+/* ---------- STRIP ---------- */
+  .strip{
+    background: var(--gold);
+    width: 70%;
+    height: 60px;
+    color: var(--indigo-deep);
+    padding: 14px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+  }
+
+  .strip-track{
+    display:inline-flex;
+    animation: ticker 28s linear infinite;
+  }
+  .strip-track span{ padding: 0 28px; font-weight:500; }
+  @media (prefers-reduced-motion: reduce){ .strip-track{ animation: none; } }
+  @keyframes ticker{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+  }
+
+
+
+/*    FIN DE ALGUNAS PRUEBAS  19 julio     */
+
+
+        .seccion ul li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            color: #555;
+        }
+
+        .seccion ul ul {
+            padding-left: 30px;
+        }
+
+        .seccion ul ul li::before {
+            content: "-";
+        }
+
+        .seccion ol {
+            padding-left: 30px;
+        }
+
+        .seccion ol li {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        /* Sección Imagen */
+        .feria {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .feria img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Sección Pie de Pagina */
+        .piepagina {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .piepagina img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .bienvenidos h1 {
+                font-size: 2.2em;
+            }
+
+            .contenido h2 {
+                font-size: 1.8em;
+            }
+
+            .bienvenidos, .contenido {
+                padding: 30px 20px;
+            }
+
+            .seccion h3 {
+                font-size: 1.3em;
+            }
+        }
